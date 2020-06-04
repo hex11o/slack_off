@@ -101,4 +101,4 @@ while True:
     schedule.run_pending()
 
 # 堵塞线程，并进入 Python 命令行
-Bot.join()
+bot.join()
