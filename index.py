@@ -9,7 +9,7 @@ import schedule
 # 开启uid
 bot = Bot(True, True)
 Bot.enable_puid(bot)
-fish_group = ensure_one(bot.groups().search('回忆'))
+fish_group = ensure_one(bot.groups().search('abc'))
 day_total_msg = 0
 
 # 获取群成员
