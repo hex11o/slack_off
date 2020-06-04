@@ -3,7 +3,7 @@ from wxpy import *
 import schedule
 
 # 开启uid
-bot = Bot()
+bot = Bot(True, True)
 Bot.enable_puid(bot)
 fish_group = ensure_one(bot.groups().search('回忆'))
 day_total_msg = 0
