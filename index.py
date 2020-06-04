@@ -7,7 +7,7 @@ from wxpy import *
 import schedule
 
 # 开启uid
-bot = Bot(True, True)
+bot = Bot(False, True)
 Bot.enable_puid(bot)
 fish_group = ensure_one(bot.groups().search('abc'))
 day_total_msg = 0
