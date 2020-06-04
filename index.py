@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from wxpy import *
 import schedule
 
