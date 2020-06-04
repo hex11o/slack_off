@@ -73,8 +73,8 @@ def clear_fish():
 # 发送消息
 def send_message():
     msg = notify_message()
-    # fish_group.send(msg)
-    bot.file_helper.send(msg)
+    fish_group.send(msg)
+#     bot.file_helper.send(msg)
 
 
 @bot.register(None, None, False)
@@ -92,10 +92,10 @@ def handle_msg(msg):
 
 
 # 消息提示
-# schedule.every().day.at("00:00").do(send_message)
-# schedule.every().day.at("00:00").do(clear_fish)
-schedule.every().minute.do(send_message)
-schedule.every().minute.do(clear_fish)
+schedule.every().day.at("00:00").do(send_message)
+schedule.every().day.at("00:00").do(clear_fish)
+# schedule.every().minute.do(send_message)
+# schedule.every().minute.do(clear_fish)
 
 while True:
     schedule.run_pending()
